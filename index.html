@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <script>
-	mudamos = true;
-	if (mudamos) {
-	window.location.href = "https://games789.github.io/1v1;
-	}
+  // Detecta cualquier intento de redirección y evita que se ejecute
+window.onbeforeunload = function() {
+  return "¿Seguro que quieres salir?";
+};
+
+// Bloquea cualquier intento de redirección a useast2
+if (window.location.hostname.includes('useast2')) {
+window.location.replace("https://aslskks.github.io/index.html");
+}
+
 </script>
+
 
 <script type="module">
 
